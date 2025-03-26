@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.item {
+  padding: 2px 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: opacity 0.2s, border 0.2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &.selected {
+    border: 1px solid #6200ee;
+  }
+}

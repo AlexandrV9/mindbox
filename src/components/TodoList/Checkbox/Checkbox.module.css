@@ -1,0 +1,39 @@
+.input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  opacity: 0;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.label {
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s;
+
+  &:not(.disabled):hover {
+    opacity: 0.6;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}
+
+.circle {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+
+  &.checked {
+    border-color: #6200ee;
+  }
+}
